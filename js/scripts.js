@@ -8,6 +8,7 @@ function mrRogers (inputNumber) {
   let stringArray = []
   for (const element of numberArray) {
     const stringNumber = element.toString();
+
     if (stringNumber.includes("2")) {
       stringArray.push("Boop!");
     }

@@ -33,13 +33,17 @@ test: It should return "Beep!" if the returned number is 1
 code: mrRogers(7)
 Expected Output: [0, "Beep!", 2, 3, 4, 5, 6, 7]
 
-test: It should return "Beep!" if the returned number contains a 1
+test: It should return "Beep!" for all numbers in the array that contain a digit "1"
 code: mrRogers(11)
 Expected Output: [0, "Beep!", 2, 3, 4, 5, 6, 7, 8, 9, "Beep!", "Beep!"]
 
-test: It should return "Boop!" for all digits in the array that contain 2"
+test: It should return "Boop!" for all numbers in the array that contain a digit "2"
 code: mrRogers(12)
 expected Output: [0, "Beep!", "Boop!", 3, 4, 5, 6, 7, 8, 9, "Beep!, "Beep!", "Boop"]
+
+test: It should return "Won't you be my neighbor?" for all numbers in the array that contain a digit "3"
+code: mrRogers(13)
+expected output: [0, "Beep!", "Boop!", "wont you be my neighbor?", 4, 5, 6, 7, 8, 9, "Beep!, "Beep!", "Boop", "won't you be my neighbor?"]
 ```
 
 ## Known Bugs
