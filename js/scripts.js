@@ -4,15 +4,13 @@ function mrRogers (inputNumber) {
   for (let i = 0; i < inputNumber; i += 1) {
     numberArray.push(numberArray[i] + 1);
   }
-    //numberArray.splice(numberArray.indexOf(1), 1, "Beep!");
-    
+
   let stringArray = []
   for (const element of numberArray) {
     const stringNumber = element.toString();
-    if (element.includes(1)) {
+    if (stringNumber.includes("1")) {
       stringArray.push("Beep!");
-    }
-    else {
+    } else {
       stringArray.push(stringNumber);
     }
   }
