@@ -7,7 +7,7 @@ function mrRogers (inputNumber) {
 
   let stringArray = []
   for (const element of numberArray) {
-    const stringNumber = element.toString(" ");
+    const stringNumber = element.toString();
     if (stringNumber.includes("3")) {
       stringArray.push("Won't you be my neighbor");
     }
@@ -21,7 +21,7 @@ function mrRogers (inputNumber) {
       stringArray.push(stringNumber);
     }
   }
- return stringArray;
+  return stringArray;
 }
 
 
@@ -31,7 +31,7 @@ function mrRogers (inputNumber) {
 function handleForm(event) {
   event.preventDefault();
   const inputNumber = document.getElementById("userInput").value;
-  let outputText = mrRogers(inputNumber);
+  let outputText = mrRogers(inputNumber).join(', ');
   document.getElementById("output").append(outputText);
   document.getElementById("output").append(document.createElement("br"));
 
