@@ -1,7 +1,7 @@
 //Business Logic
-function mrRogers (number) {
+function mrRogers (inputNumber) {
   let numberArray = [0]
-  for (let i = 0; i < number; i += 1) {
+  for (let i = 0; i < inputNumber; i += 1) {
     numberArray.push(numberArray[i] + 1);
   };
   return numberArray;
@@ -12,3 +12,15 @@ function mrRogers (number) {
 
 
 // UI Logic
+
+function handleForm(event) {
+  event.preventDefault();
+  const inputNumber = document.getElementById("userInput").value;
+  let outputText = mrRogers(inputNumber);
+  document.getElementById("output").append(outputText);
+
+}
+
+window.addEventListener ("load", function () {
+  document.querySelector("form#mrRogers").addEventListener("submit", handleForm);
+});
