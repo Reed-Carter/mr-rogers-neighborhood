@@ -1,4 +1,5 @@
 //Business Logic
+
 function mrRogers (inputNumber) {
   let numberArray = [0]
   for (let i = 0; i < inputNumber; i += 1) {
@@ -34,6 +35,7 @@ function handleForm(event) {
   let outputText = mrRogers(inputNumber).join(', ');
   document.getElementById("output").append(outputText);
   document.getElementById("output").append(document.createElement("br"));
+  
 
 }
 
