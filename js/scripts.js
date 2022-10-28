@@ -1,17 +1,24 @@
 //Business Logic
 function mrRogers (inputNumber) {
   let numberArray = [0]
-  for (let i = 0; i <= inputNumber - 1; i += 1) {
+  for (let i = 0; i < inputNumber; i += 1) {
     numberArray.push(numberArray[i] + 1);
   }
-    numberArray.splice(numberArray.indexOf(1), 1, "Beep!");
-  return numberArray;
+    //numberArray.splice(numberArray.indexOf(1), 1, "Beep!");
+    
+  let stringArray = []
+  for (const element of numberArray) {
+    const stringNumber = element.toString();
+    if (element.includes(1)) {
+      stringArray.push("Beep!");
+    }
+    else {
+      stringArray.push(stringNumber);
+    }
+  }
+ return stringArray;
 }
 
-
-if (numberArray[i].includes(valueOf(1))) {
-      numberArray.splice(numberArray[1], 1, "Beep!");
-    };
 
 
 // UI Logic
