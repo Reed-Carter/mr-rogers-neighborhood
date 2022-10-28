@@ -8,9 +8,13 @@ function mrRogers (inputNumber) {
   let stringArray = []
   for (const element of numberArray) {
     const stringNumber = element.toString();
+    if (stringNumber.includes("2")) {
+      stringArray.push("Boop!");
+    }
     if (stringNumber.includes("1")) {
       stringArray.push("Beep!");
-    } else {
+    }
+     else {
       stringArray.push(stringNumber);
     }
   }
