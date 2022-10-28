@@ -11,13 +11,13 @@ function mrRogers (inputNumber) {
     if (stringNumber.includes("3")) {
       stringArray.push("Won't you be my neighbor");
     }
-    if (stringNumber.includes("2")) {
+    else if (stringNumber.includes("2")) {
       stringArray.push("Boop!");
     }
-    if (stringNumber.includes("1")) {
+    else if (stringNumber.includes("1")) {
       stringArray.push("Beep!");
     }
-     else {
+    else {
       stringArray.push(stringNumber);
     }
   }
