@@ -7,7 +7,7 @@ function mrRogers (inputNumber) {
 
   let stringArray = []
   for (const element of numberArray) {
-    const stringNumber = element.toString();
+    const stringNumber = element.toString(" ");
     if (stringNumber.includes("3")) {
       stringArray.push("Won't you be my neighbor");
     }
