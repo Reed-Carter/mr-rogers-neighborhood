@@ -1,9 +1,10 @@
 //Business Logic
 function mrRogers (inputNumber) {
   let numberArray = [0]
-  for (let i = 0; i < inputNumber; i += 1) {
+  for (let i = 0; i <= inputNumber - 1; i += 1) {
     numberArray.push(numberArray[i] + 1);
   };
+  numberArray.splice(numberArray.indexOf(1), 1, "Beep!");
   return numberArray;
 }
 
