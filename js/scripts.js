@@ -4,7 +4,7 @@ function mrRogers (inputNumber) {
   for (let i = 0; i <= inputNumber - 1; i += 1) {
     numberArray.push(numberArray[i] + 1);
   };
-  numberArray.splice(numberArray.indexOf(1), 1, "Beep!");
+    numberArray.splice(numberArray.indexOf(1), 1, "Beep!");
   return numberArray;
 }
 

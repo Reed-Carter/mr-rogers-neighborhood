@@ -33,6 +33,9 @@ test: It should return "Beep!" if the returned number is 1
 code: mrRogers(7)
 Expected Output: [0, "Beep!", 2, 3, 4, 5, 6, 7]
 
+test: It should return "Beep!" if the returned number contains a 1
+code: mrRogers(11)
+Expected Output: [0, "Beep!", 2, 3, 4, 5, 6, 7, 8, 9, 10, "Beep!"]
 
 ```
 
