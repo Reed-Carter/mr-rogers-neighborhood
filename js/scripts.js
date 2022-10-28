@@ -18,6 +18,7 @@ function handleForm(event) {
   const inputNumber = document.getElementById("userInput").value;
   let outputText = mrRogers(inputNumber);
   document.getElementById("output").append(outputText);
+  document.getElementById("output").append(document.createElement("br"));
 
 }
 
