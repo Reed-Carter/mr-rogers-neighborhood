@@ -26,7 +26,6 @@ function mrRogers (inputNumber) {
 }
 
 
-
 // UI Logic
 
 function handleForm(event) {
@@ -35,8 +34,6 @@ function handleForm(event) {
   let outputText = mrRogers(inputNumber).join(', ');
   document.getElementById("output").append(outputText);
   document.getElementById("output").append(document.createElement("br"));
-  
-
 }
 
 window.addEventListener ("load", function () {
